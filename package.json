@@ -3,15 +3,29 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Welcome to **ACApp** – the ultimate solution to **Buy, Sell & Repair Air Conditioners** all in one place! 💼🔧",
   "dependencies": {
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.2",
     "body-parser": "^2.2.0",
+    "connect-mongo": "^5.1.0",
     "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "mongoose": "^8.14.3",
     "multer": "^1.4.5-lts.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhavya-j231/ac-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bhavya-j231/ac-website/issues"
+  },
+  "homepage": "https://github.com/bhavya-j231/ac-website#readme"
 }
