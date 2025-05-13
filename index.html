@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - AC Services</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">ACApp</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="listing.html">Old ACs</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="seller-form.html">Sell AC</a>
+            <a href="seller-dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Your Complete AC Solution</h1>
+        <!-- <img src="assets/images/ac9.jpg" height="726px" width="1440px"> -->
+        <p>Buy, Sell, Repair — All in One Place</p>
+        <a href="listing.html" class="btn">Explore Services</a>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <img src="assets/images/ac7.jpg" alt="AC Installation">
+                <h3>AC Installation</h3>
+                <p>Quick and reliable AC installation.</p>
+                <a href="seller-form.html" class="btn">Post Now</a>
+            </div>
+            <div class="service-card">
+                <img src="assets/images/ac7.jpg" alt="AC Repair">
+                <h3>AC Repair</h3>
+                <p>Get your AC fixed at your doorstep.</p>
+                <a href="seller-form.html" class="btn">Post Now</a>
+            </div>
+            <div class="service-card">
+                <img src="assets/images/ac7.jpg" alt="Buy Used ACs">
+                <h3>Buy Old ACs</h3>
+                <p>Certified pre-owned ACs at affordable rates.</p>
+                <a href="listing.html" class="btn">Browse</a>
+            </div>
+            <div class="service-card">
+                <img src="assets/images/ac7.jpg" alt="Sell Old ACs">
+                <h3>Sell Your AC</h3>
+                <p>List your old AC in minutes.</p>
+                <a href="seller-form.html" class="btn">Post Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Old ACs Section -->
+    <section class="old-acs">
+        <h2>Old Listed AC Products</h2>
+        <div class="listing-grid">
+            <div class="listing-card">
+                <img src="assets/images/ac8.jpg" alt="Voltas 1.5 Ton AC">
+                <h4>Voltas 1.5 Ton</h4>
+                <p>₹12,000 - Good condition</p>
+                <a href="listing.html" class="btn">View Details</a>
+            </div>
+            <div class="listing-card">
+                <img src="assets/images/ac8.jpg" alt="Samsung Inverter AC">
+                <h4>Samsung Inverter</h4>
+                <p>₹15,500 - Barely used</p>
+                <a href="listing.html" class="btn">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 ACApp | All rights reserved.</p>
+    </footer>
+<div id="footer-placeholder"></div>
+
+<script>
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pricing - ACApp</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">ACApp</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="listing.html">Old ACs</a>
+      <a href="pricing.html" class="active">Pricing</a>
+      <a href="seller-form.html">Sell AC</a>
+      <a href="seller-dashboard.html">Dashboard</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <section class="pricing">
+  <h2>Our <span class="highlight">Subscription Models</span></h2>
+
+  <div class="pricing-cards">
+    <!-- Basic Plan -->
+    <div class="card basic">
+      <h3>Basic</h3>
+      <p class="price">₹50<br><span>User/Month</span></p>
+      <ul>
+        <li class="check">Attendance Management</li>
+        <li class="check">Leave System Management</li>
+        <li class="check">Employee Management</li>
+        <li class="check">Chat Support</li>
+        <li class="cross"><s>Expense Tracking</s></li>
+        <li class="cross"><s>Invoice Generate</s></li>
+        <li class="cross"><s>Purchase Generate</s></li>
+        <li class="cross"><s>Payroll</s></li>
+        <li class="cross"><s>App Management</s></li>
+      </ul>
+      <button>Choose Plan</button>
+    </div>
+
+    <!-- VIP Plan -->
+    <div class="card vip">
+      <h3>VIP</h3>
+      <p class="price">₹200<br><span>User/Month</span></p>
+      <ul>
+        <li class="check">App Management</li>
+        <li class="check">Attendance Management</li>
+        <li class="check">Leave System Management</li>
+        <li class="check">Employee Management</li>
+        <li class="check">Expense Tracking</li>
+        <li class="check">Chat Support</li>
+        <li class="check">Invoice Generate</li>
+        <li class="cross"><s>Purchase Generate</s></li>
+        <li class="cross"><s>Payroll</s></li>
+      </ul>
+      <button>Choose Plan</button>
+    </div>
+
+    <!-- Premium Plan -->
+    <div class="card premium">
+      <h3>Premium</h3>
+      <p class="price">₹150<br><span>User/Month</span></p>
+      <ul>
+        <li class="check">App Management</li>
+        <li class="check">Attendance Management</li>
+        <li class="check">Leave System Management</li>
+        <li class="check">Employee Management</li>
+        <li class="check">Expense Tracking</li>
+        <li class="check">Chat Support</li>
+        <li class="check">Invoice Generate</li>
+        <li class="check">Purchase Generate</li>
+        <li class="check">Payroll</li>
+      </ul>
+      <button>Choose Plan</button>
+    </div>
+  </div>
+</section>
+<!---
+    <h1>Our Subscription Models</h1>
+    <p>Choose a plan that suits your needs</p>
+  </section>
+
+   Pricing Plans 
+  <section class="pricing">
+    <div class="plan">
+      <h3>Basic</h3>
+      <p class="price">₹50</p>
+      <ul>
+        <li>List 1 AC</li>
+        <li>Visible for 3 days</li>
+        <li>Email Support</li>
+      </ul>
+       Add a link for the button 
+      <a href="basic-plan.html" class="btn">Select Plan</a>
+    </div>
+
+    <div class="plan featured">
+      <h3>Premium</h3>
+      <p class="price">₹200</p>
+      <ul>
+        <li>List up to 5 ACs</li>
+        <li>Visible for 15 days</li>
+        <li>Priority Listing</li>
+      </ul>
+       Add a link for the button 
+      <a href="premium-plan.html" class="btn">Select Plan</a>
+    </div>
+
+    <div class="plan">
+      <h3>Pro</h3>
+      <p class="price">₹150</p>
+      <ul>
+        <li>List 3 ACs</li>
+        <li>Visible for 10 days</li>
+        <li>Email & Phone Support</li>
+      </ul>
+       Add a link for the button 
+      <a href="pro-plan.html" class="btn">Select Plan</a>
+    </div>
+  </section>
+-->
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 ACApp | All rights reserved.</p>
+  </footer>
+<div id="footer-placeholder"></div>
+
+<script>
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>
