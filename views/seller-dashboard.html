@@ -4,6 +4,89 @@
     <meta charset="UTF-8" />
     <title>Seller Dashboard - ACApp</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <style>
+      /* Dashboard Enhancements */
+      .dashboard-hero {
+        background-color: #f4f6f8;
+        text-align: center;
+        padding: 2rem 1rem;
+      }
+      .container {
+        padding: 2rem 5%;
+      }
+      .overview-grid {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .overview-grid .card {
+        flex: 1;
+        min-width: 200px;
+        background: #fff;
+        border-radius: 8px;
+        padding: 1.2rem;
+        text-align: center;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+      .stat {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-top: 0.5rem;
+        color: #007bff;
+      }
+      .table-container {
+        overflow-x: auto;
+        margin-top: 1rem;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #fff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+      table th,
+      table td {
+        padding: 0.75rem 1rem;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+      }
+      .status {
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.85rem;
+      }
+      .status.available {
+        background-color: #d4edda;
+        color: #155724;
+      }
+      .status.sold {
+        background-color: #f8d7da;
+        color: #721c24;
+      }
+      .dashboard-actions {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin: 2rem 0;
+      }
+      .primary-btn,
+      .secondary-btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      .primary-btn {
+        background-color: #007bff;
+        color: white;
+      }
+      .secondary-btn {
+        background-color: #6c757d;
+        color: white;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -95,10 +178,6 @@
       </button>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <p>&copy; 2025 ACApp | All rights reserved.</p>
-    </footer>
     <div id="footer-placeholder"></div>
 
     <script>
@@ -107,6 +186,20 @@
         .then(data => {
           document.getElementById('footer-placeholder').innerHTML = data
         })
+
+      const userLoggedIn = localStorage.getItem('loggedIn') === 'true'
+      document.getElementById('login-btn').style.display = userLoggedIn
+        ? 'none'
+        : 'inline'
+      document.getElementById('signup-btn').style.display = userLoggedIn
+        ? 'none'
+        : 'inline'
+      document.getElementById('logout-btn').style.display = userLoggedIn
+        ? 'inline'
+        : 'none'
+      document.getElementById('logout-btn').addEventListener('click', () => {
+        localStorage.removeItem('loggedIn')
+      })
     </script>
   </body>
 </html>

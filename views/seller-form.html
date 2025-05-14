@@ -84,10 +84,6 @@
       </form>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <p>&copy; 2025 ACApp | All rights reserved.</p>
-    </footer>
     <div id="footer-placeholder"></div>
 
     <script>
@@ -96,6 +92,20 @@
         .then(data => {
           document.getElementById('footer-placeholder').innerHTML = data
         })
+
+      const userLoggedIn = localStorage.getItem('loggedIn') === 'true'
+      document.getElementById('login-btn').style.display = userLoggedIn
+        ? 'none'
+        : 'inline'
+      document.getElementById('signup-btn').style.display = userLoggedIn
+        ? 'none'
+        : 'inline'
+      document.getElementById('logout-btn').style.display = userLoggedIn
+        ? 'inline'
+        : 'none'
+      document.getElementById('logout-btn').addEventListener('click', () => {
+        localStorage.removeItem('loggedIn')
+      })
     </script>
   </body>
 </html>
