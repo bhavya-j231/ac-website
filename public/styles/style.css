@@ -335,6 +335,9 @@ p {
   margin-bottom: 8px;
   color: #ffffff;
 }
+.footer-details {
+  margin-left: 8rem;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
